@@ -1,0 +1,137 @@
+/* Text colors */
+.text-primary {
+  color: #28a745;
+}
+
+.text-secondary {
+  color: #0284d0;
+}
+
+/* button */
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  color: #fff;
+  background: #28a745;
+  cursor: pointer;
+  background: #28a745;
+  border: none;
+  border-radius: 0.5rem;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-priamry,
+.bg-primary {
+  background: #28a745;
+  color: #fff;
+}
+.btn-secondary,
+.bg-secondary {
+  background: #28a4d0;
+  color: #fff;
+}
+.btn-light,
+.bg-primary {
+  background: #28a745;
+  color: #fff;
+}
+.btn-dark,
+.bg-dark {
+  background: #28a745;
+  color: #333;
+}
+
+.btn-outline {
+  background: transparent;
+  border: solid #fff 1px;
+}
+
+/* flex-columns */
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-basis: 100%;
+}
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-columns h2 {
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+.flex-columns h4 {
+  margin-bottom: 1rem;
+}
+.flex-columns p {
+  margin: 2rem 0;
+}
+.flex-items {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+/* selecting the direct div child */
+
+.flex-items > div {
+  padding: 2rem;
+}
+
+/* section header */
+
+.section-header {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+}
+
+.section-padding {
+  padding: 1rem 1.5rem 2.2rem;
+}
+
+/* flex-grid */
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0.4rem;
+}

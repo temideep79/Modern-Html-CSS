@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  padding: 3.5rem;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 1rem 2rem;
+}
+.navbar ul {
+  display: flex;
+}
+
+.navbar a:hover {
+  border-bottom: #28a745 2px solid;
+}
+.navbar .logo {
+  font-weight: 400;
+}
+
+/* header */
+
+.hero {
+  background: url(/images/home/showcase.jpg) center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+.hero .content h1 {
+  font-size: 4.5rem;
+  margin: 2rem 0 3rem;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+/*  select everything inside hero [selector-3] */
+
+.hero * {
+  z-index: 0;
+}
+/* icons */
+
+.icons {
+  padding: 3rem;
+}
+
+.icons h3 {
+  margin-bottom: 2rem;
+}
+
+.icons i {
+  background-color: #28a745;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.flex-items {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+/* selecting the direct div child */
+
+.flex-items > div {
+  padding: 2rem;
+}
